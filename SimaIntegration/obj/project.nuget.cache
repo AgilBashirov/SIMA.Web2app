@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "VKdsR002rYZyH9L1w5B79XxKsefsXq3X28UWKqn6zm5VMzNxcuR/+kH84O+7gAzLpiIwt+LvxdI3NzV1XO8nbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aqil.bashirov\\source\\repos\\SimaIntegration\\SimaIntegration\\SimaIntegration.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aqil.bashirov\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\aqil.bashirov\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\aqil.bashirov\\.nuget\\packages\\restsharp\\106.13.0\\restsharp.106.13.0.nupkg.sha512",
+    "C:\\Users\\aqil.bashirov\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\aqil.bashirov\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\aqil.bashirov\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\aqil.bashirov\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
