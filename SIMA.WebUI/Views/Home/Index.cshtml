@@ -1,0 +1,73 @@
+﻿@model ContractModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form asp-controller="home" asp-action="Index" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Protocol Info</h1>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.ProtoInfo.Version" for="ProtocolVersion" class="form-label">Protocol version</label>
+                    <select asp-for="@Model.SignableContainer.ProtoInfo.Version" class="form-select">
+                        <option value="1">Version 1.0</option>
+                        <option value="2">Version 1.1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-6">
+                <h1>Operation information</h1>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.OperationInfo.OperationId" for="OperationId" class="form-label">OperationId</label>
+                    <input asp-for="@Model.SignableContainer.OperationInfo.OperationId" type="number" class="form-control" id="OperationId">
+                </div>
+                <div class="mb-3 form-check">
+                    <label for="OperationType" class="form-label">Operation Type</label>
+                    <select asp-for="@Model.SignableContainer.OperationInfo.Type" class="form-select">
+                        <option value="1">Auth</option>
+                        <option value="2">Sign</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.OperationInfo.NbfUTC" for="NbfUTC" class="form-label">NbfUTC</label>
+                    <input asp-for="@Model.SignableContainer.OperationInfo.NbfUTC" type="date" class="form-control" id="NbfUTC">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.OperationInfo.ExpUTC" for="ExpUTC" class="form-label">ExpUTC</label>
+                    <input asp-for="@Model.SignableContainer.OperationInfo.ExpUTC" type="date" class="form-control" id="ExpUTC">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.OperationInfo.Assignee" for="Assignee" class="form-label">Assignee</label>
+                    <input asp-for="@Model.SignableContainer.OperationInfo.Assignee" type="text" class="form-control" id="Assignee">
+                </div>
+            </div>
+            <div class="col-6">
+                <h1>Client information</h1>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.ClientInfo.ClientId" for="ClientId" class="form-label">ClientId</label>
+                    <input asp-for="@Model.SignableContainer.ClientInfo.ClientId" type="number" class="form-control" id="ClientId">
+                </div>
+                 <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.ClientInfo.SecretKey" for="Secretkey" class="form-label">Secret key</label>
+                    <input asp-for="@Model.SignableContainer.ClientInfo.SecretKey" type="text" class="form-control" id="Secretkey">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.ClientInfo.HostName" for="HostName" class="form-label">HostName</label>
+                    <input asp-for="@Model.SignableContainer.ClientInfo.HostName" type="text" class="form-control" id="HostName">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.ClientInfo.IconURI" for="Icon" class="form-label">Icon</label>
+                    <input asp-for="@Model.SignableContainer.ClientInfo.IconURI" type="text" class="form-control" id="Icon">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SignableContainer.ClientInfo.Callback" for="Callback" class="form-label">Callback</label>
+                    <input asp-for="@Model.SignableContainer.ClientInfo.Callback" type="text" class="form-control" id="Callback">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
